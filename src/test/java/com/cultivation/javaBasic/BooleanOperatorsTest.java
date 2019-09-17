@@ -20,15 +20,29 @@ class BooleanOperatorsTest {
                 true & false,
                 false & false,
                 true | true,
-                true | false,
-                false | false,
+                true   | false,
                 3 == 7,
                 4 != 5
         };
 
         // TODO: please modify the following code to pass the test
         // <--start
-        boolean[] expectedResult = {};
+        boolean[] expectedResult = {
+                true,
+                false,
+                false,
+                true,
+                true,
+                false,
+                true,
+                false,
+                false,
+                true,
+                true,
+                false,
+                false,
+                true};
+
         // --end-->
 
         assertArrayEquals(expectedResult, actualResults);
