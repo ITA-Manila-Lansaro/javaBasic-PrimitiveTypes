@@ -51,7 +51,7 @@ class BooleanOperatorsTest {
     @Test
     void should_do_bitwise_and_boolean_operation() {
         final int value = 0x1234_abcd;
-        final int mask = 0x000f_ff00;
+        final int mask =  0x000f_ff00;
 
         // TODO: please write down the result directly to pass the test.
         // <--start
@@ -68,7 +68,7 @@ class BooleanOperatorsTest {
 
         // TODO: please write down the result directly to pass the test.
         // <--start
-        final int expected = 0;
+        final int expected = 0x1234_abcd;
         // --end-->
 
         assertEquals(expected, value | mask);
