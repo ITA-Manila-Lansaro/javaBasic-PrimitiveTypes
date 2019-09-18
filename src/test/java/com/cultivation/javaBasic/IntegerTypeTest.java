@@ -24,7 +24,7 @@ class IntegerTypeTest {
     }
 
     @Test
-        void should_get_range_of_primitive_short_type() {
+    void should_get_range_of_primitive_short_type() {
         final short maximum = 32767;
         final short minimum = -32768;
 
@@ -126,7 +126,7 @@ class IntegerTypeTest {
     @Test
     void should_truncate_number_when_casting() {
         final int integer = 0x0123_4567;
-        final short smallerInteger = (short)integer;
+        final short smallerInteger = (short) integer;
 
         // TODO: please modify the following lines to pass the test
         // <!--start
@@ -172,6 +172,12 @@ class IntegerTypeTest {
     private int add(int left, int right) {
         // TODO: Please find the method that adding two numbers with overflow checking.
         // The method should throw ArithmeticException if overflow or underflow happens.
-        throw new ArithmeticException();
+        int result = left + right;
+
+        if (left + right >= Integer.MAX_VALUE || left + right <= Integer.MIN_VALUE){
+            throw new ArithmeticException();
+        }
+        return result;
     }
+
 }
