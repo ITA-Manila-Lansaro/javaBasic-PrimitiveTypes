@@ -88,7 +88,7 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = 0;
+        final int expectedResult = Integer.MIN_VALUE - 1;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillUnderflow);
