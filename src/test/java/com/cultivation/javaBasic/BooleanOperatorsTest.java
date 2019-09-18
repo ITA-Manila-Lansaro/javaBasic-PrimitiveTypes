@@ -40,7 +40,6 @@ class BooleanOperatorsTest {
                 true,
                 true,
                 false,
-                false,
                 true};
 
         // --end-->
